@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<link rel="stylesheet" href="css/bootstrap4.css">
+		<link rel="stylesheet" href="css/RTC1.css">
+		<!--<link rel="stylesheet" href="css/aos.css">-->
+		<link href="css/hover.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="animate.css-master/animate.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="css/font-awesome.css">
+		<title>Luxlighting RTC</title>
+		<script>
+			$(document).ready(function() {
+
+				var toggleAffix = function(affixElement, scrollElement, wrapper) {
+			  
+				var height = affixElement.outerHeight(),
+					top = wrapper.offset().top;
+				
+				if (scrollElement.scrollTop() >= top){
+					wrapper.height(height);
+					affixElement.addClass("affix");
+				}
+				else {
+					affixElement.removeClass("affix");
+					wrapper.height('auto');
+				}
+				};
+				$('[data-toggle="affix"]').each(function() {
+				var ele = $(this),
+					wrapper = $('<div></div>');
+				
+				ele.before(wrapper);
+				$(window).on('scroll resize', function() {
+					toggleAffix(ele, $(this), wrapper);
+				});
+				
+				// init
+				toggleAffix(ele, $(window), wrapper);
+				});
+			});
+	    </script>
+    </head>
+	<body id="myPage">
+		<!--navbar-->
+		<div class="container-fluid bg-head header-top d-md-block toppadding" data-toggle="affix">
+			<nav class="navbar navbar-expand-lg navbar-light py-0">
+			  <a class="navbar-brand logo" href="index.html">
+				<img src="images/Luxlogo.jpg">
+			  </a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-auto text-light">
+				  <li class="nav-item">
+					<a class="nav-link" href="index.html">HOME</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="about.html">ABOUT US</a>
+				  </li>
+				   <li class="nav-item active">
+					<a class="nav-link" href="service.html">SERVICES</a>
+				  </li>
+				  <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle"  href="product1.html">PRODUCTS</a>
+					<ul class="dropdown-content">
+					  <li><a href="product1.html">Laboratory Instruments /Scientific Equipment / Biotechnology Laboratory Equipment</a></li>
+					  <li><a href="product2.html">Temperature Controller & Product Automation</a></li>
+					</ul>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="contact.html">CONTACT US</a>
+				  </li>
+				</ul>
+			  </div>
+			</nav>
+		</div>
+		<!--navbar/-->
+	    <div class="main-image">
+			<img src="images/service7.jpg" class="img-fluid" style="display:block;">
+		</div>
+		<div class="container-fluid toppadding listt1">
+			<div class="row p1 p2">
+				<div class="col-md-12 text-left ce-text">
+					<h4 style="padding-top:5px;color:black;font-weight: bold;">CONSULTATION-PROJECT AND PLANNING</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8 listt">
+					<p data-aos="fade-up" class="text-justify">Through Consultation services RTC management opens formal and informal communication
+						channels between the organisation and their esteemed customers. Some common responsibilities
+						we hold include observing business operations, identifying problem areas, developing practical
+						solutions, executing changes and assisting employees throughout the process. We understand our
+						customers, their needs, their plans and according to that we sequence project tasks and the nature of
+						the dependencies among project activates. We'll see how we should schedule a project and, finally,
+						we’ll review how you can make changes to a plan to support your overall project objectives.
+					</p>
+					<h6>BENEFITS OF ENGAGING RTC FOR CONSULTATION:</h6>
+					<ul>
+						<li> We assist you in budgeting of projects</li>
+						<li> To understand your future requirements.</li>
+						<li> Helps in minimizing the cost for budgeting.</li>
+						<li> We provide our best knowledge and expertise on chambers.</li>
+					</ul>
+				</div>
+				<div class="col-md-4 pt-3 listt" align="center">
+					<img src="images/consult1.jpg" class="img-fluid"  style="border:2px solid #8080803d;;padding:2px;display:block;">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 listt">
+					<p class="text-justify">At <span style="color:#1172b5;font-weight:bold;">LUXLIGHTING TECHNOLOGY PVT. LTD..</span> We design and develop a complete range of scientific and
+					laboratory equipment’s with highest quality standards. We follow those planning principles and
+					execution methodologies that can offer best ways in which projects can be run more effectively and
+					efficiently. Project management team provides customers with the language and the frameworks for
+					scoping projects, sequencing activities, utilizing resources, and minimizing risks</p>
+					<h6>EACH AND EVERY PROJECT IS UNIQUE AND FOR DIFFERENT SCOPE LIKE:</h6>
+					<ul>
+						<li> Telecom/electronics (corrosion test chamber, battery test chamber etc.)</li>
+						<li> Pharma(cytogenetic drying chamber, thermal cyclic test chamber)</li>
+						<li> Education/research (temp and humidity chamber, environment test chamber etc.)</li>
+						<li> Aerospace/avionics (altitude test chamber, agree test chambers etc.)</li>
+						<li> Hospitals (sterilizers, blood bank, refrigerator) etc.</li>
+						<li> And other categories</li>
+					</ul>
+					<p>We understand our customers well defined needs and plan our steps according to that</p>
+					<h6>ENVIRONMENTAL TEST CHAMBERS AND LABORATORY EQUIPMENT’S</h6>
+					<ul>
+						<li>We will provide a complete end to end solution to meet your specific new projects
+						requirements, specifying details with time frames & budget.</li>
+						<li> Assessment and confirmation of customer needs like</li>
+						<li> Dimension</li>
+						<li> Temperature</li>
+						<li> humidity, vacuum</li>
+						<li> light control</li>
+						<li> Extra facilities etc.</li>
+						<li> We assist you selecting the appropriate product(s), handling orders from manufacturers,design, and implementation.</li>
+						<li> We install the product at location of operation, conducting design analysis for compliance.</li>
+						<li> Provide Post-delivery hardware / software installation.</li>
+						<li> Commissioning, connection to existing system(s), synchronization, network adjustment, and system ability testing</li>
+					</ul>
+					<h6>MECHANICAL TESTING EQUIPMENT</h6>
+					<ul>
+						<li> Assessment and confirmation of customer needs (setting exact test parameters).</li>
+						<li> Design / production based on sample product / drawing(s).</li>
+						<li> Commissioning and pilot run using given sample(s) on the spot, at the time of acceptance.</li>
+						<li> Training operators in the use of the equipment, including health / safety measures,adjustment / programming of controls.</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row" style="background-image: -webkit-linear-gradient(left, #00c9ff00, #92fe9d82 ,#00c9ff00);  /* Chrome 10-25, Safari 5.1-6 */
+			 background-image:linear-gradient(left, #00c9ff00, #92fe9d82, #00c9ff00);height:1px;">
+			</div>
+			<div class="row p1 p2">
+				<div class="col-md-12 text-left ce-text">
+					<h4 style="padding-top:5px;color:black;font-weight: bold;">CALIBRATION & VALIDATION</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8 listt">
+					<p data-aos="fade-up" class="text-justify">We are ERTL/NABL accredited laboratory and offer specialist calibration and validation facilities.
+					This is usually carried out as a part of maintenance program but calibrations can be arranged as per
+					customers need.
+					</p>
+					<p data-aos="fade-up" class="text-justify">RTC technologies has the ability to calibrate variety of environmental chambers. This includes ovens,
+					chambers, freezers, autoclaves, incubators, temperature, refrigerators and humidity chambers etc.in
+					calibration we demonstrate that a particular equipment or device produces results within specified
+					limits by comparison with those produced by reference over an appropriate range of measurement.
+					</p>
+					<h6>PARAMETERS DETERMINED</h6>
+					<p>Following parameters are determined:</p>
+					<ul>
+						<li> Air temperature/humidity spatial distribution.</li>
+						<li> Uncertainty associated with reference standards.</li>
+						<li> Error in equipment’s reading.</li>
+						<li> Influence of ambient conditions.</li>
+					</ul>
+				</div>
+				<div class="col-md-4" align="center">
+					<img src="images/calibration.jpg" class="img-fluid"  style="border:2px solid #8080803d;;padding:2px;display:block;">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 listt">
+					<h6 style="color:black;font-weight:bold;">SCOPE OF CALIBRATION</h6>
+					<ul>
+						<li> Air temperature in an empty working environment</li>
+						<li> Air temperature in loaded working volume.</li>
+						<li> Air humidity in an empty working environment.</li>
+						<li> Air temperature at single spot in chamber.</li>
+					</ul>
+					<h6>CALIBRATION FACILITIES</h6>
+					<p>RTC provide two types of calibration facilities</p>
+					<ul>
+						<li> On site validation: calibration at place of installation.</li>
+						<li> Factory validation: calibration at our premises.</li>
+					</ul>
+					<h6>CALIBRATION CERTIFICATE/FACTORY TEST REPORT</h6>
+					<p>Together with the general requirements of standards and accreditation, on the request of customer
+					we provide the factory test report or the calibration certificate which includes the following:
+					</p>
+					<ul>
+						<li> Details of sample.</li>
+						<li> Details of working conditional parameters of chamber.</li>
+						<li> Details of specific volume calibration and distribution of sensors.</li>
+						<li> Results of calibration calculated together with measurement of uncertainty.</li>
+						<li> Next calibration due date.</li>
+					</ul>
+					<p>We also provide chamber validation periodically to achieve the required specifications and to
+					comply with regulatory or laboratory standards. The chambers may be tested with or without loads
+					according to the requirement.<br />RTC carries product validation in following steps:</p>
+					<ul>
+						<li> Take a plan.</li>
+						<li> Check equipment and documentation.</li>
+						<li> Confirm device operation.</li>
+						<li> Set up data logger.</li>
+						<li> Check the progress.</li>
+						<li> Retrieve and store the data.</li>
+						<li> Report the findings.</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row" style="background-image: -webkit-linear-gradient(left, #00c9ff00, #92fe9d82 ,#00c9ff00);  /* Chrome 10-25, Safari 5.1-6 */
+			 background-image:linear-gradient(left, #00c9ff00, #92fe9d82, #00c9ff00);height:1px;">
+			</div>
+			<div class="row p1 p2">
+				<div class="col-md-12 text-left ce-text">
+					<h4 style="padding-top:5px;color:black;font-weight: bold;">CUSTOMIZATION OF THE EQUIPMENTS</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8 listt">
+					<p data-aos="fade-up" class="text-justify">RTC not only provides standard chambers but also customize the chambers according to the needs
+					and specifications of the customers. We provide customized equipment’s at standard price.<br />
+					RTC will design and build custom test chambers to support your specific requirements like:
+					</p>
+					<h6>1. CONTROL FEATURES:</h6>
+					<ul>
+						<li> Temperature</li>
+						<li> Humidity</li>
+						<li> Dew point</li>
+						<li> Weight</li>
+						<li> Electromagnetic radiation</li>
+						<li> Vacuum</li>
+						<li> Light</li>
+					</ul>
+					<h6>2. DIMENSIONAL FEATURES:</h6>
+					<ul>
+						<li> Exterior dimension</li>
+						<li> Interior dimension</li>
+						<li> Test space dimension</li>
+						<li> Volume/capacity</li>
+					</ul>
+				</div>
+				<div class="col-md-4 listt" align="center">
+					<img src="images/customization1.jpg" class="img-fluid"  style="border:2px solid #8080803d;;padding:2px;display:block;">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 listt">
+					<h6>3. MONITORING AND DATA LOGGING FACILITY</h6>
+					<h6>4. RAMPING AND SOAKING FACILITY:</h6>
+					<p>Rather than standard time, temperature change rate time can be determined according to the
+					customer’s needs. Factors that affect ramp up time of a chamber are the size, temperature range, and
+					power of the heating or refrigeration system of the chamber. We also customize for how much time
+					the customer wants to hold the temperature.
+					</p>
+					<h6>5. SAMPLE HOLDING FACILITY AS PER APPLICATION:</h6>
+					<P>Sample-Holding Facility which allow complex environmental samples to be prepared and stored for
+					subsequent analyses can be customized according to the need.</P>
+					<h6>6. ACCESS PORT FACILITY AND TEST SAMPLE MONITORINGFACILITY.</h6>
+					<P>Rather than providing standard ports additional ports or reduced ports can be provided on request.</P>
+					<h6>7. ADDITIONAL CONTROL FUNCTION FACILITY IN ONE CHAMBER:</h6>
+					<P>We also customize the equipment of embedding control functions of other chambers into one
+					chamber.<br />Our team of experienced engineers has worked successfully with many government organizations,
+					bio-tech institutes, and commercial companies to provide environmental test chambers for unique
+					testing situations.<br />Contact us to discuss your requirements at <a href="#">info@rtcin.com</a></P>
+				</div>
+			</div>
+			<div class="row" style="background-image: -webkit-linear-gradient(left, #00c9ff00, #92fe9d82 ,#00c9ff00);  /* Chrome 10-25, Safari 5.1-6 */
+			 background-image:linear-gradient(left, #00c9ff00, #92fe9d82, #00c9ff00);height:1px;">
+			</div>
+			<div class="row p1 p2">
+				<div class="col-md-12 text-left ce-text">
+					<h4 style="padding-top:5px;color:black;font-weight: bold;">REPAIR AND AMC</h4>
+				</div>
+			</div>
+			<div class="row wow">
+				<div class="col-md-8 listt">
+					<p data-aos="fade-up" class="text-justify">We undertake Annual Maintenance Service Contracts (AMC)/ Up gradation work of old chambers
+					(equipment’s) / Repair & service work for any make (Indian/ Imported) equipment’s of listed
+					product range. (Click here for the product range).
+					</p>
+					<h6>WE OFFER THE FOLLOWING SERVICES</h6>
+					<ul>
+						<li> Laboratory Equipment Repair Services</li>
+						<li> Preventive Maintenance Services for Lab Equipment’s</li>
+						<li> Laboratory Equipment Relocation, Installation And Setup</li>
+						<li> Extended Warranties for Lab Repair Services</li>
+						<li> Laboratory Equipment Outfitting and sales</li>
+						<li> Laboratory Equipment Repair Contract Services</li>
+						<li> After warranty AMC across India.</li>
+					</ul>
+				</div>
+				<div class="col-md-4 listt" align="center">
+					<img src="images/Repair1.jpg" class="img-fluid" style="border:2px solid #8080803d;;padding:2px;display:block;">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 listt">
+					<h6>ENGINEERS VISIT</h6>
+					<p>We have engineers in different regions to take care of the queries of their areas. Our engineers visit
+						your site at periodic intervals to optimize and improve the performance of your instruments. At
+						every visit our engineer records the problems observed and action taken for individual instrument,
+						helping you to maintain detailed history of instruments for better analysis and improved
+						performance.
+						Preventive maintenance is performed by one of our factory-trained field service engineers. During
+						each visit, all electrical components, refrigeration components, and other equipment and systems
+						will be thoroughly inspected. Where possible, routine minor adjustments will be made to return
+						your equipment to top running condition as a part of this service. Upon completion of the inspection,
+						our service technician will provide you with a detailed recommendation of any additional repairs
+						that may be needed.
+					</p>
+					<h6>INSPECTION PROTOCOL DURING PREVENTIVE MAINTENANCE SOFTWARE SYSTEM:</h6>
+					<ul>
+						<li> Upgrades, Retrofits and Reconfigurations</li>
+						<li> Calibration With Instrumentation</li>
+						<li> Interfacing to Existing or new Equipment</li>
+						<li> Integration With Other Software</li>
+					</ul>
+					<h6>ELECTRICAL SYSTEM:</h6>
+					<ul>
+						<li> Phasing</li>
+						<li> Line and Control Voltage and Connections</li>
+						<li> Timer Settings, Fuses, and Grounding</li>
+						<li> Compressor Head Fans & Crankcase Heaters</li>
+						<li> Heater Frames and Elements etc.</li>
+					</ul>
+					<h6>CURRENT VERIFICATION:</h6>
+					<ul>
+						<li> Compressors</li>
+						<li> Heaters, Circulators, Steam Process Elements</li>
+						<li> Instrumentation Calibration (Additional Fee May Be Required)</li>
+						<li> System Calibration Certification (Additional Fee May Be Required) etc.</li>
+					</ul>
+					<h6>CABINET:</h6>
+					<ul>
+						<li> Panel To Panel Seals (Modular Boxes)</li>
+						<li> Overall Cabinet Surveillance</li>
+						<li> Viewing Window Inspection</li>
+						<li> Proper Floating Hinge Operation</li>
+					</ul>
+					<h6>ANNUAL MAINTENANCE CONTRACT</h6>
+					<p>Depending upon the product you own RTC offer different types of AMC contracts, you can choose the
+						contract based on your regular product usage, requirement and the stress it undergoes.</p>
+					<h6>ADVANTAGES OF REGISTERING FOR AN AMC:</h6>
+					<ul>
+						<li> Saves from unexpected Repairs and avoids cost for these repairs.</li>
+						<li> Round the Clock Service from our engineers.</li>
+						<li> Planned Services for your Products.</li>
+						<li> Genuine Spare Parts for high reliability.</li>
+					</ul>
+					<p><b>How to Register for Annual Maintenance Contract (AMC):</b> : Generally every product is provided
+					with the warranty for fixed period of time after the product is purchased. Whenever warranty for the
+					product expires, customers should call the at the company, in order to buy AMC for entire life cycle
+					of products. For getting an AMC you have to just mail us with details at info@RTCindia.com and our
+					service team will respond you back.</p>
+					<h6>LIST OF EQUIPMENTS:</h6>
+					<ol>
+						<li>Test Chambers</li>
+						<li>Incubators</li>
+						<li>Water Baths</li>
+						<li>Cooling Equipment's Laboratory</li>
+						<li>Oven</li>
+						<li>Clean Room</li>
+						<li>Laboratory Furnace</li>
+						<li>Centrifuge</li>
+						<li>Distillation</li>
+					</ol>
+				</div>
+			</div>
+		</div>	
+		<!--footer-->
+		<div class="container-fluid footer toppadding2">
+			<div class="row">
+				<div class="col-md-5">
+					<div class="row">
+						<div class="col-md-7 col-6 contctus">
+							<h6 class="pt-4">Our Office</h6>
+							<p class="pt-2">LUXLIGHTING TECHNOLOGY PRIVATE LIMITED
+							 GSTIN : 07AADCL2486K1Z7</br> B-232/1, Birla Farm Chhattarpur Extension, New Delhi-110074
+							 </p>
+						</div>
+						<div class="col-md-5 col-6 quicklink">
+							<h6 class="pt-4">Quick Links</h6>
+							<ul class="pt-0">
+								<li><a href="index.html" class="hvr-skew-forward">Home</a></li>
+								<li><a href="about.html" class="hvr-skew-forward">About Us</a></li>
+								<li><a href="service.html" class="hvr-skew-forward">Services</a></li>
+								<li><a href="product1.html" class="hvr-skew-forward">Product</a></li>
+								<li><a href="contact.html" class="hvr-skew-forward">Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-7 col-6 contctus">
+							<h6 class="">Reach Us At</h6>
+							<p class="pt-0 pb-0 mt-0 mb-0">Telephone:<span style="font-weight:400;">  +91 11 65666883</span></p>
+							<p class="pt-0 pb-0 mt-0 mb-0">Mob:<span style="font-weight:400;">  9350831213,</span></p>
+							<p class="pt-0 pb-0 mt-0 mb-0">Email:<span style="font-weight:400;"> info@rtcin.com </span></p>
+						</div>
+						<div class="col-md-5 col-6 quicklink">
+							<h6 class="">Follow Us</h6>
+							<div class="pt-0">
+								<span>
+									<a href="http://www.facebook.com" target="_blank" title="facebook" class="hvr-icon-buzz-out"><i class="fa fa-facebook-square hvr-icon"></i></a>
+									<a href="http://www.twitter.com" target="_blank" title="twitter" class="hvr-icon-buzz-out"><i class="fa fa-twitter hvr-icon"></i></a>
+									<a href="http://www.linkedin.com" target="_blank" title="linkedin" class="hvr-icon-buzz-out"><i class="fa fa-linkedin hvr-icon"></i></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-7">
+					<div class="row">
+						<div class="col-md-6 text-center">
+							<h6 class="pt-4">Find us on Google Map</h6>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d28057.459867556445!2d77.1646561791197!3d28.47405055309519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sB-232%2F1%2C+Birla+Farm+Chhattarpur+Extension%2C+New+Delhi-110074!5e0!3m2!1sen!2sin!4v1559108394449!5m2!1sen!2sin" width="100%" height="250" frameborder="0" style="border:0" class="pt-2" allowfullscreen></iframe>
+						</div>
+						<div class="col-md-6 text-center">
+							<h6 class="pt-4">Get in touch</h6>
+							<div style="padding-left:12px;padding-right:12px;">
+								<form class="form-horizontal pt-2" action="/action_page.php" style="margin-left:auto;margin-right:auto;">
+									<div class="row form-group">
+										<input type="email" class="form-control" id="email" placeholder="Your Name">
+									</div>
+									<div class="row form-group">
+										<input type="email" class="form-control" id="email" placeholder="Your Email">
+									</div>
+									<div class="row form-group">
+										<input type="email" class="form-control" id="email" placeholder="Phone Number">
+									</div>
+									
+									<div class="row form-group">
+										<textarea class="form-control" id="email" placeholder="Your Message Here" rows="2"></textarea>
+									</div>
+									<div class="row form-group" id="cntbtn"align="center">
+										<div class="col-sm-12 col-xs-12">
+										<button type="email" class="btn btn-default hvr-ripple-out" style="color:grey;border:0;margin-left:-8px;">Submit</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--footer/-->
+		<!--footer-bottom-->
+		<div class="container-fluid footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<p class="text-center">copyright © 2018-2019 Luxlighting Technology Private Limited</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--footer-bottom-->
+		<a href="#myPage" id="toTop" title="to top" style="display:inline;"></a>
+		<script src="js/wow.js"></script>
+		<script>
+			new WOW().init();
+		</script>
+	</body>	
+</html>

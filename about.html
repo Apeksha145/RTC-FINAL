@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<link rel="stylesheet" href="css/bootstrap4.css">
+		<link rel="stylesheet" href="css/RTC1.css">
+		<link rel="stylesheet" type="text/css" href="animate.css-master/animate.css">
+		<link href="css/hover.css" rel="stylesheet">
+		<!--<link rel="stylesheet" href="css/aos.css">-->
+		<link href="css/hover.css" rel="stylesheet">
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="css/font-awesome.css">
+		<title>Luxlighting RTC</title>
+		<script>
+			$(document).ready(function() {
+
+				var toggleAffix = function(affixElement, scrollElement, wrapper) {
+			  
+				var height = affixElement.outerHeight(),
+					top = wrapper.offset().top;
+				
+				if (scrollElement.scrollTop() >= top){
+					wrapper.height(height);
+					affixElement.addClass("affix");
+				}
+				else {
+					affixElement.removeClass("affix");
+					wrapper.height('auto');
+				}
+				  
+				};
+				$('[data-toggle="affix"]').each(function() {
+				var ele = $(this),
+					wrapper = $('<div></div>');
+				
+				ele.before(wrapper);
+				$(window).on('scroll resize', function() {
+					toggleAffix(ele, $(this), wrapper);
+				});
+				
+				// init
+				toggleAffix(ele, $(window), wrapper);
+				});
+			});
+		</script>
+	</head>
+	<body id="myPage">
+		<div class="container-fluid bg-head header-top d-md-block toppadding" data-toggle="affix">
+			<nav class="navbar navbar-expand-lg navbar-light py-0">
+			  <a class="navbar-brand logo" href="index.html">
+				<img src="images/Luxlogo.jpg">
+			  </a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-auto text-light">
+				  <li class="nav-item">
+					<a class="nav-link" href="index.html">HOME</a>
+				  </li>
+				  <li class="nav-item active">
+					<a class="nav-link" href="about.html">ABOUT US</a>
+				  </li>
+				   <li class="nav-item">
+					<a class="nav-link" href="service.html">SERVICES</a>
+				  </li>
+				  <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle"  href="product1.html">PRODUCTS</a>
+					<ul class="dropdown-content">
+					  <li><a href="product1.html">Laboratory Instruments /Scientific Equipment / Biotechnology Laboratory Equipment</a></li>
+					  <li><a href="product2.html">Temperature Controller & Product Automation</a></li>
+					</ul>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="contact.html">CONTACT US</a>
+				  </li>
+				</ul>
+			  </div>
+			</nav>
+		</div>
+		<!--navbar/-->
+		<!--imgcontainer-->
+	    <div class="main-image">
+			<img src="images/about7.jpg" class="img-fluid" style="display:block;">
+		</div>
+		<!--imgcontainer/-->
+		<div class="container-fluid toppadding">
+			<div class="row servtext">
+				<div class="col-md-4 col-sm-12 pt-0 pb-2 listt wow fadeInLeft" align="center">
+				 <img src="images/aboutus1.jpg" class="img-fluid" style="margin:0px;border:2px solid #8080803d;;padding:2px;">
+				</div>
+				<div class="col-md-8 col-sm-12 pt-0 pb-0 listt">
+					<p><span style="color:#3a8bc5;font-weight:bold;">Established</span> in 2003, we are one of the leading manufacturers and suppliers of <span style="color:#3a8bc5;font-weight:bold;">“RTC” </span> brand laboratory equipment
+				and instruments, to various Universities, College, R & D labs, Institutes etc. Since 2003 we have been
+				manufacturing scientific laboratory equipment indigenously which were being imported till then. It has always
+				been our endeavour to have customer's convenience in mind which constantly compels us to modify and improve
+				upon our products continuously so that they have better acceptance by the end user. Slowly and steadily we
+				gained confidence of our customers to the extent that our product specifications are being adapted for laying
+				down tender specifications for purchase of laboratory equipment by major universities, institutes, college etc.
+					</p>
+					<p>A full-fledged dedication and consistent effort accompanied by the professionally managed team to establish
+					RTC which with the passage of time made a mark in the scientific journey of his life and to top of all we worked
+					passionately hard. A biomedical medical instrumentation professional from B.IT. Mesra, Ranchi, dreamt big and
+					formed the RTC brand in instrument business to provide best in industries product, we emerged and how? Our
+					strong foothold in scientific industry is due to the provision and efficiency that is achieved painstakingly at our
+					extremely modern manufacturing unit.</p>
+				</div>
+			</div>	
+		</div>
+		<div class="container-fluid toppadding">
+			<div class="row servtext1">
+				<div class="col-md-12 text-justify servicee">
+					<h6 style="color:#2a6ca5;font-weight:bold;">QUALITY & AFTER SALE SERVICES</h6>
+					<p class="text-justify">Our excellent quality and unmatched after sale service speak for us. We manufacture our product with utmost
+					efficiency and perfect alignment. RTC is a Brand apart that does not believe in joining the bandwagon. We
+					believe in trading new and most scientific paths to produce each instrument with perfect precision. Our
+					unmatchable quality and commendable “After Sale Service” make us stand tall and strong among others.</p>
+					<p class="text-justify">Our “RTC” products are built up and fabricated from the best available raw materials and carry a warrantee of
+					one year. However, to look after the services and concerns of the end user, our proficient service and field staff 
+					can rectify the problem and can ever show how you can do appropriate maintenance to avoid minor problems in
+					future. This however justifies our key to success: Efficient After Sale Service.
+					</p>
+					<h6 class="pt-2"  style="color:#2a6ca5;font-weight:bold;">INFRA STRUCTURE AND IN-HOUSE TESTING FACILITIES</h6>
+					<p class="text-justify">Ours is a centrally located PRODUCTION HOUSE located in the heart of one of the most prestigious
+					INDUSTRIAL AREAS of Delhi , with one of the most sound infrastructural set-up having latest and state of the art
+					RTC machinery all under on roof. These in-house facilities enable us to meet up to all manufacturing standards
+					and challenges, this reflecting on the workmanship and quality of our equipment. We are qualified and
+					professionally managed engineering team to working with their utmost efficiency to provide quality instruments
+					and services to customers and hence the brand “RTC” itself indicates the perfect dealing in the field of scientific
+					instrumentation.</p>
+					<p class="text-justify">Further our in-house testing facilities and procedures reflect on the quality and longer life of our equipment. We
+					are quality conscious production house and our aim is just to win the goodwill of our clients by supplying quality
+					equipment at competitive price. However, this is how we are getting regular and repeated business, being
+					multiplied year after year.
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--footer-->
+		<div class="container-fluid footer toppadding2">
+			<div class="row">
+				<div class="col-md-5">
+					<div class="row">
+						<div class="col-md-7 col-6 contctus">
+							<h6 class="pt-4">Our Office</h6>
+							<p class="pt-2">LUXLIGHTING TECHNOLOGY PRIVATE LIMITED
+							 GSTIN : 07AADCL2486K1Z7</br> B-232/1, Birla Farm Chhattarpur Extension, New Delhi-110074
+							 </p>
+						</div>
+						<div class="col-md-5 col-6 quicklink">
+							<h6 class="pt-4">Quick Links</h6>
+							<ul class="pt-0">
+								<li><a href="index.html" class="hvr-skew-forward">Home</a></li>
+								<li><a href="about.html" class="hvr-skew-forward">About Us</a></li>
+								<li><a href="service.html" class="hvr-skew-forward">Services</a></li>
+								<li><a href="product1.html" class="hvr-skew-forward">Product</a></li>
+								<li><a href="contact.html" class="hvr-skew-forward">Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-7 col-6 contctus">
+							<h6 class="">Reach Us At</h6>
+							<p class="pt-0 pb-0 mt-0 mb-0">Telephone:<span style="font-weight:400;">  +91 11 65666883</span></p>
+							<p class="pt-0 pb-0 mt-0 mb-0">Mob:<span style="font-weight:400;">  9350831213,</span></p>
+							<p class="pt-0 pb-0 mt-0 mb-0">Email:<span style="font-weight:400;"> info@rtcin.com </span></p>
+						</div>
+						<div class="col-md-5 col-6 quicklink">
+							<h6 class="">Follow Us</h6>
+							<div class="pt-0">
+								<span>
+									<a href="http://www.facebook.com" target="_blank" title="facebook" class="hvr-icon-buzz-out"><i class="fa fa-facebook-square hvr-icon"></i></a>
+									<a href="http://www.twitter.com" target="_blank" title="twitter" class="hvr-icon-buzz-out"><i class="fa fa-twitter hvr-icon"></i></a>
+									<a href="http://www.linkedin.com" target="_blank" title="linkedin" class="hvr-icon-buzz-out"><i class="fa fa-linkedin hvr-icon"></i></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-7">
+					<div class="row">
+						<div class="col-md-6 text-center">
+							<h6 class="pt-4">Find us on Google Map</h6>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d28057.459867556445!2d77.1646561791197!3d28.47405055309519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sB-232%2F1%2C+Birla+Farm+Chhattarpur+Extension%2C+New+Delhi-110074!5e0!3m2!1sen!2sin!4v1559108394449!5m2!1sen!2sin" width="100%" height="250" frameborder="0" style="border:0" class="pt-2" allowfullscreen></iframe>
+						</div>
+						<div class="col-md-6 text-center">
+							<h6 class="pt-4">Get in touch</h6>
+							<div style="padding-left:12px;padding-right:12px;">
+								<form class="form-horizontal pt-2" action="/action_page.php" style="margin-left:auto;margin-right:auto;">
+									<div class="row form-group">
+										<input type="email" class="form-control" id="email" placeholder="Your Name">
+									</div>
+									<div class="row form-group">
+										<input type="email" class="form-control" id="email" placeholder="Your Email">
+									</div>
+									<div class="row form-group">
+										<input type="email" class="form-control" id="email" placeholder="Phone Number">
+									</div>
+									
+									<div class="row form-group">
+										<textarea class="form-control" id="email" placeholder="Your Message Here" rows="2"></textarea>
+									</div>
+									<div class="row form-group" id="cntbtn"align="center">
+										<div class="col-sm-12 col-xs-12">
+										<button type="email" class="btn btn-default hvr-ripple-out" style="color:grey;border:0;margin-left:-8px;">Submit</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--footer/-->
+		<!--footer-bottom-->
+		<div class="container-fluid footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<p class="text-center">copyright © 2018-2019 Luxlighting Technology Private Limited</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--footer-bottom-->
+		<a href="#myPage" id="toTop" title="to top" style="display:inline;"></a>
+		<script src="js/wow.js"></script>
+		<script>
+			new WOW().init();
+		</script>
+	</body>	
+</html>
