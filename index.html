@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<link rel="stylesheet" href="css/bootstrap4.css">
+		<link rel="stylesheet" href="css/RTC1.css">
+		<link href="css/hover.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="animate.css-master/animate.css">
+		<link rel="stylesheet" href="css/font-awesome.css">
+		<title>Luxlighting RTC</title>
+		<!-- Owl Stylesheets -->
+		<link rel="stylesheet" href="css/owl.carousel.min.css">
+		<link rel="stylesheet" href="css/owl.theme.default.min.css">
+		<!-- javascript -->
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/owl.carousel.js"></script>
+		<script>
+		$(document).ready(function() {
+			var toggleAffix = function(affixElement, scrollElement, wrapper) {
+		  
+			var height = affixElement.outerHeight(),
+				top = wrapper.offset().top;
+			
+			if (scrollElement.scrollTop() >= top){
+				wrapper.height(height);
+				affixElement.addClass("affix");
+			}
+			else {
+				affixElement.removeClass("affix");
+				wrapper.height('auto');
+			}
+			};
+			$('[data-toggle="affix"]').each(function() {
+			var ele = $(this),
+				wrapper = $('<div></div>');
+			
+			ele.before(wrapper);
+			$(window).on('scroll resize', function() {
+				toggleAffix(ele, $(this), wrapper);
+			});
+			
+			// init
+			toggleAffix(ele, $(window), wrapper);
+			});
+		});
+		</script>
+	</head>
+	<body id="myPage">
+		<!--navbar-->
+		<div class="container-fluid bg-head header-top d-md-block toppadding" data-toggle="affix">
+			<nav class="navbar navbar-expand-lg navbar-light py-0">
+			  <a class="navbar-brand logo" href="index.html">
+				<img src="images/Luxlogo.jpg">
+			  </a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-auto text-light">
+				  <li class="nav-item active">
+					<a class="nav-link" href="index.html">HOME</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="about.html">ABOUT US</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="service.html">SERVICES</a>
+				  </li>
+				  <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle"  href="product1.html">PRODUCTS</a>
+					<ul class="dropdown-content">
+					  <li><a href="product1.html">Laboratory Instruments /Scientific Equipment / Biotechnology Laboratory Equipment</a></li>
+					  <li><a href="product2.html">Temperature Controller & Product Automation</a></li>
+					</ul>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="contact.html">CONTACT US</a>
+				  </li>
+				</ul>
+			  </div>
+			</nav>
+		</div>
+		<!--navbar/-->
+		<!--carosel  start-->
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+			</ol>
+			<div class="carousel-inner">  
+				<div class="carousel-item active">
+				<img src="images/Research & Development FirmR.jpg" alt="img1" class="w-100">
+				  <div class="carousel-caption text-left">
+                    <h1 class="fadeInLeft wow" data-sppb-wow-delay="1.2s">                                                         
+                        Research & Development Firm                                                                           
+                    </h1>                                                                                                        
+				  </div> 
+                </div> 
+				<div class="carousel-item">
+				<img src="images/Biotechnology InstitutionsB.jpg" alt="img1" class="w-100">
+				  <div class="carousel-caption text-left">
+                    <h1 class="fadeInRight wow" data-sppb-wow-delay="1.2s">                                                         
+                        Biotechnology Institutions                                                                            
+                    </h1>                                                                                                        
+                </div> 
+                </div> 
+				<div class="carousel-item">
+				<img src="images/Pharmaceutical IndustriesP1.jpg" alt="img1" class="w-100">
+				  <div class="carousel-caption text-left">
+                    <h1 class="fadeInLeft wow" data-sppb-wow-delay="1.2s">                                                         
+                        Pharmaceutical Industries                                                                                 
+                    </h1>                                                                                                        
+                </div> 
+                </div>
+				<div class="carousel-item">
+				<img src="images/horticultureH.jpg" alt="img1" class="w-100">
+				  <div class="carousel-caption text-left">
+                    <h1 class="fadeInRight wow" data-sppb-wow-delay="1.2s">                                                         
+                        Horticulture                                                                              
+                    </h1>                                                                                                        
+                </div> 
+                </div>
+				<div class="carousel-item">
+				<img src="images/Food IndustriesF.jpg" alt="img1" class="w-100">
+				  <div class="carousel-caption text-left">
+                    <h1 class="fadeInLeft wow" data-sppb-wow-delay="1.2s">                                                         
+                      Food Industries                                                                               
+                    </h1>                                                                                                        
+                </div> 
+                </div>
+				<div class="carousel-item">
+				<img src="images/Educational Institutes laboratoryE.jpg" alt="img1" class="w-100">
+				  <div class="carousel-caption text-left">
+                    <h1 class="fadeInRight wow" data-sppb-wow-delay="1.2s">                                                         
+                       Educational Institutes                                                                             
+                    </h1>                                                                                                        
+                </div> 
+                </div>
+				<div class="carousel-item" class="fadeInDown wow" data-sppb-wow-delay="1.2s">
+				 <img src="images/Chemical IndustriesS2.jpg" alt="img2" class="w-100">
+				 <div class="carousel-caption text-left" >                                                                         
+                    <h1 class="fadeInLeft wow" data-sppb-wow-delay="1.2s">Chemical Industries</h1>                                                                                                        
+			     </div>    
+				</div>
+				<div class="carousel-item">
+				 <img src="images/Rubber & Cocoa IndustriesR.jpg" alt="img2" class="w-100">
+				 <div class="carousel-caption text-left" >                                                                         
+                    <h1 class="fadeInRight wow" data-sppb-wow-delay="1.2s">Rubber & Cocoa Industries </h1>                                                                                                        
+			     </div> 
+				</div>
+				<div class="carousel-item">
+				 <img src="images/Petrochemical and FertilizerP.jpg" alt="img2" class="w-100">
+				 <div class="carousel-caption text-left" >                                                                         
+                    <h1 class="fadeInLeft wow" data-sppb-wow-delay="1.2s">Petrochemical & Fertilizer  </h1>                                                                                                        
+			     </div> 
+				</div>
+				<div class="carousel-item">
+				 <img src="images/Automotive IndustriesA.jpg" alt="img2" class="w-100">
+				 <div class="carousel-caption text-left" >                                                                         
+                    <h1 class="fadeInRight wow" data-sppb-wow-delay="1.2s"> Automotive Industries</h1>                                                                                                        
+			     </div> 
+				</div>
+				<div class="carousel-item">
+				 <img src="images/Electronics IndustriesEl.jpg" alt="img2" class="w-100">
+				 <div class="carousel-caption text-left" >                                                                         
+                    <h1 class="fadeInLeft wow" data-sppb-wow-delay="1.2s">Electronics Industries</h1>                                                                                                        
+			     </div> 
+				</div>
+		    </div>
+		</div>
+		<!--/carosel-->
+		<!--main-container-->
+		<div class="container-fluid welcome toppadding">
+			<div class="row">
+				<div class="col-md-12 text-center pt-3">
+					<h4>WELCOME TO <span style="color:brown;">LUXLIGHTING TECHNOLOGY PRIVATE LIMITED</span></h4>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid welcometext toppadding">
+			<div class="row servtext">
+				<div class="col-md-12">
+					<p><span style="color:#3a8bc5;font-weight:bold;">Established</span> in 2003, we are one of the leading manufacturers and suppliers of <span style="color:#3a8bc5;font-weight:bold;">“RTC” </span> brand laboratory equipment
+					and instruments, to various Universities, College, R & D labs, Institutes etc. Since 2003 we have been
+					manufacturing scientific laboratory equipment indigenously which were being imported till then. It has always
+					been our endeavour to have customer's convenience in mind which constantly compels us to modify and improve
+					upon our products continuously so that they have better acceptance by the end user. Slowly and steadily we
+					gained confidence of our customers to the extent that our product specifications are being adapted for laying
+					down tender specifications for purchase of laboratory equipment by major universities, institutes, college etc.
+					</p>
+					<a href="about.html"><span class="fa fa-angle-double-right"> Know&nbsp;More..</span></a>
+				</div>
+			</div>
+		</div>
+		<!--main-container/-->
+		<div class="container-fluid pt-3 pb-5 toppadding">
+			<div class="row" style="background-color:#80808014;">
+				<div class="col-md-12 text-center product">
+					<h4 style="padding-top:5px;">OUR PRODUCTS</h4>
+				</div>
+			</div>
+			<div class="row pt-4">
+				<div class="col-md-12 text-center prod">
+					<h5><u>Laboratory Instruments /Scientific Equipment / Biotechnology Laboratory Equipment </u></h5>
+				</div>
+			</div>
+			<div class="large-12 columns pt-4">
+				<div class="owl-carousel owl-theme">
+					<div class="item" align="center">
+						<img src="images/Bath & Chillers/Bath & Chillers1.jpg" class="img-fluid d-block" alt="..." style="text-align:center;" />
+						<p>Bath & Chillers <br /><a href="images/Bath & Chillers/REFRIGERATED (CHILLER) WATER BATH.pdf" target="_blank" align="center" style="color:blue;">PDF HERE</a></p>      
+					</div>
+					<div class="item" align="center">
+						<div class="item" align="center">
+							<img src="images/Clean Room Equipment/Clean Room Equipment1.jpg" class="img-fluid  d-block" alt="..." style="text-align:center;" />
+							<p>Clean Room Equipment<br /><a href="images/Clean Room Equipment/BIOLOGICAL SAFETY CABINET.pdf" target="_blank" align="center" style="color:blue;">PDF HERE</a></p>                    
+						</div>
+					</div>
+					<div class="item" align="center">
+						<img src="images/Cooling Equipment/Cooling Equipment1.jpg" class="img-fluid  d-block" alt="..." style="text-align:center;" />
+						<p>Cooling Equipment<br /><a href="images/Cooling Equipment/B O D Incubator.pdf" target="_blank" align="center" style="color:blue;">PDF HERE</a></p>                    
+					</div>
+					<div class="item" align="center">
+						<img src="images/Incubator -Oven/Incubator -Oven1.jpg" class="img-fluid d-block" alt="..." style="text-align:center;" />
+						<p>Incubator -Oven<br /><a href="images/Incubator -Oven/HOT AIR OVEN UNIVERSAL (MEMMERT TYPE) RTC-211.pdf" target="_blank" align="center" style="color:blue;">PDF HERE</a></p>
+					</div>
+					<div class="item" align="center">
+						<img src="images/Laboratory Equipment/Laboratory Equipment1.jpg" class="img-fluid d-block" alt="..." style="text-align:center;" />
+						<p>Laboratory Equipment<br /><a href="images/Laboratory Equipment/CARBON DI-OXIDE INCUBATOR (DELUXE MODEL) RTC-129 (DX).pdf" target="_blank" align="center" style="color:blue;">PDF HERE</a></p>                    
+					</div>
+					<div class="item" align="center">
+						<div class="item item client-item-wrapper" align="center">
+						<img src="images/Test Chambers/Test Chambers1.jpg" class="img-fluid d-block" alt="..." style="text-align:center;" />
+						<p>Test Chambers<br /><a href="images/Test Chambers/Hot & Cold Chamber.pdf" target="_blank" align="center" style="color:blue;">PDF HERE</a></p></div>
+					</div>
+				</div>
+			</div>
+			<div class="row pt-4">
+				<div class="col-md-12 text-center prod">
+					<h5><u>Temperature Controller & Product Automation</u></h5>
+				</div>
+			</div>
+			<div class="large-12 columns pt-4">
+				<div class="owl-carousel owl-theme">
+					<div class="item O" align="center">
+						<img src="images/Airvelocity Sensor/Airvelocity Sensor1.jpg" class="image img-fluid d-block" alt="..." style="width:250px;text-align:center;border:2px solid grey;border-radius:100%;" />
+						<div class="overlay">
+							<div class="text text-center">
+								<h5 style="padding-top:0px;padding-bottom:0px;">Air velocity Sensor <br /><a href="images/Airvelocity Sensor/RTC - Airvelocity Sensor.pdf" target="_blank" align="center" style="color:red;">pdf</a></h5>
+							</div>
+						</div>
+					</div>
+					<div class="item O" align="center">
+						<img src="images/Autoclave FND 2valve/Flyer Autoclave1.jpg" class="image img-fluid d-block" alt="..." style="width:250px;text-align:center;border:2px solid grey;border-radius:100%;" />
+						<div class="overlay">
+							<div class="text">
+								<h5 style="padding-top:0px;padding-bottom:0px;text-align:center;">Flyer Autoclave <br /><a href="images/Autoclave FND 2valve/Flyer Autoclave.pdf" target="_blank" align="center" style="color:red;">pdf</a></h5>
+							</div>
+						</div>
+					</div>
+					<div class="item O" align="center">
+						<img src="images/Biosafety Controller/Biosafety Controller.jpg" class="image img-fluid d-block" alt="..." style="width:250px;text-align:center;border:2px solid grey;border-radius:100%;" />
+						<div class="overlay">
+							<div class="text">
+								<h5 style="padding-top:0px;padding-bottom:0px;text-align:center;">Biosafety Controller <br /><a href="images/Biosafety Controller/Biosafety Controller Manual and Specification.pdf" target="_blank" align="center" style="color:red;">pdf</a></h5>
+							</div>
+						</div>
+					</div>
+					<div class="item O" align="center">
+						<img src="images/Biosafety Manual/Biosafety Manual.jpg" class="image img-fluid d-block" alt="..." style="width:250px;text-align:center;border:2px solid grey;border-radius:100%;" />
+						<div class="overlay">
+							<div class="text">
+								<h5 style="padding-top:0px;padding-bottom:0px;text-align:center;">Biosafety Manual <br /><a href="images/Biosafety Manual/User manual and wiring diagram biosafety and Laminar.pdf" target="_blank" align="center" style="color:red;">pdf</a></h5>
+							</div>
+						</div>
+					</div>
+					<div class="item O" align="center">
+						<img src="images/BOD Controller/BOD Controller.jpg" class="image img-fluid d-block" alt="..." style="width:250px;text-align:center;border:2px solid grey;border-radius:100%;" />
+						<div class="overlay">
+							<div class="text">
+								<h5 style="padding-top:0px;padding-bottom:0px;text-align:center;">BOD Controller<br /><a href="images/BOD Controller/USER MANUAL BOD_2019 with Sticker.pdf" target="_blank" align="center" style="color:red;">pdf</a></h5>
+							</div>
+						</div>
+					</div>
+					<div class="item O" align="center">
+						<img src="images/Co2 Controller/Co2 Controller.jpg" class="image img-fluid d-block" alt="..." style="width:250px;text-align:center;border:2px solid grey;border-radius:100%;" />
+						<div class="overlay">
+							<div class="text">
+								<h5 style="padding-top:0px;padding-bottom:0px;text-align:center;">Co2 Controller <br /><a href="images/Co2 Controller/test.pdf" target="_blank" align="center" style="color:red;">pdf</a></h5>
+							</div>
+						</div>
+					</div>
+					<div class="item O" align="center">
+						<img src="images/Co2 Sensor/Co2 Sensor.jpg" class="image img-fluid d-block" alt="..." style="width:250px;text-align:center;border:2px solid grey;border-radius:100%;" />
+						<div class="overlay">
+							<div class="text">
+								<h5 style="padding-top:0px;padding-bottom:0px;text-align:center;">Co2 Sensor <br /><a href="images/Co2 Sensor/RTC Co2 Sensor 0 to 20%.pdf" target="_blank" align="center" style="color:red;">pdf</a></h5>
+							</div>
+						</div>
+					</div>
+					<div class="item O" align="center">
+						<img src="images/Deepfreezer -86 Controller/Deepfreezer -86 Controller.jpg" class="image img-fluid d-block" alt="..." style="width:250px;text-align:center;border:2px solid grey;border-radius:100%;" />
+						<div class="overlay">
+							<div class="text">
+								<h5 style="padding-top:0px;padding-bottom:0px;text-align:center;">Deepfreezer -86 Controller <br /><a href="images/Deepfreezer -86 Controller/test.pdf" target="_blank"align="center" style="color:red;">pdf</a></h5>
+							</div>
+						</div>
+					</div>
+					<div class="item O" align="center">
+						<img src="images/Embedding Station/Embedding Station.jpg" class="image img-fluid d-block" alt="..." style="width:250px;text-align:center;border:2px solid grey;border-radius:100%;" />
+						<div class="overlay">
+							<div class="text">
+								<h5 style="padding-top:0px;padding-bottom:0px;text-align:center;">Embedding Station <br /><a href="images/Embedding Station/test.pdf" target="_blank" align="center" style="color:red;">pdf</a></h5>
+							</div>
+						</div>
+					</div>
+					<div class="item O" align="center">
+						<img src="images/Freezer Controller -40/Freezer Controller -40.jpg" class="image img-fluid d-block" alt="..." style="width:250px;text-align:center;border:2px solid grey;border-radius:100%;" />
+						<div class="overlay">
+							<div class="text">
+								<h5 style="padding-top:0px;padding-bottom:0px;text-align:center;">Freezer Controller -40 <br /><a href="images/Freezer Controller -40/test.pdf" target="_blank" align="center" style="color:red;">pdf</a></h5>
+							</div>
+						</div>
+					</div>
+					<div class="item O" align="center">
+						<img src="images/Grow Light/Grow Light.jpg" class="image img-fluid d-block" alt="..." style="width:250px;text-align:center;border:2px solid grey;border-radius:100%;" />
+						<div class="overlay">
+							<div class="text">
+								<h5 style="padding-top:0px;padding-bottom:0px;text-align:center;">Grow Light<br /><a href="images/Grow Light/test.pdf" target="_blank" align="center" style="color:red;">pdf</a></h5>
+							</div>
+						</div>
+					</div>
+					<div class="item O" align="center">
+						<img src="images/Humidity Controller/Humidity Controller.jpg" class="image img-fluid d-block" alt="..." style="width:250px;text-align:center;border:2px solid grey;border-radius:100%;" />
+						<div class="overlay">
+							<div class="text">
+								<h5 style="padding-top:0px;padding-bottom:0px;text-align:center;">Humidity Controller <br /><a href="images/test.pdf" target="_blank" align="center" style="color:red;">pdf</a></h5>
+							</div>
+						</div>
+					</div>
+					<div class="item O" align="center">
+						<img src="images/Humidity Sensor/Humidity Sensor.jpg" class="image img-fluid d-block" alt="..." style="width:250px;text-align:center;border:2px solid grey;border-radius:100%;" />
+						<div class="overlay">
+							<div class="text">
+								<h5 style="padding-top:0px;padding-bottom:0px;text-align:center;">Humidity Sensor <br /><a href="images/Humidity Sensor/RTC_HM1500LF-Humidity Sensor.pdf" target="_blank" align="center" style="color:red;">pdf</a></h5>
+							</div>
+						</div>
+					</div>
+					<div class="item O" align="center">
+						<img src="images/Incubator Controller/Incubator Controller.jpg" class="image img-fluid d-block" alt="..." style="width:250px;text-align:center;border:2px solid grey;border-radius:100%;" />
+						<div class="overlay">
+							<div class="text">
+								<h5 style="padding-top:0px;padding-bottom:0px;text-align:center;">Incubator Controller<br /><a href="images/Incubator Controller/Incubator Controller Manual and Specification.pdf" target="_blank" align="center" style="color:red;">pdf</a></h5>
+							</div>
+						</div>
+					</div>
+					<div class="item O" align="center">
+						<img src="images/Laminar Air Flow Controller/Laminar Air Flow Controller.jpg" class="image img-fluid d-block" alt="..." style="width:250px;text-align:center;border:2px solid grey;border-radius:100%;" />
+						<div class="overlay">
+							<div class="text">
+								<h5 style="padding-top:0px;padding-bottom:0px;text-align:center;">Laminar Air Flow Controller<br /><a href="images/Laminar Air Flow Controller/Laminar air flow Controller Manual and Specification.pdf" align="center" target="_blank" style="color:red;">pdf</a></h5>
+							</div>
+						</div>
+					</div>
+					<div class="item O" align="center">
+						<img src="images/Microtome RTC/Microtome RTC.jpg" class="image img-fluid d-block" alt="..." style="width:250px;text-align:center;border:2px solid grey;border-radius:100%;" />
+						<div class="overlay">
+							<div class="text">
+								<h5 style="padding-top:0px;padding-bottom:0px;text-align:center;">Microtome RTC<br /><a href="images/Microtome RTC/test.pdf" target="_blank" align="center" style="color:red;">pdf</a></h5>
+							</div>
+						</div>
+					</div>
+					<div class="item O" align="center">
+						<img src="images/Microtome Slee/Microtome Slee.jpg" class="image img-fluid d-block" alt="..." style="width:250px;text-align:center;border:2px solid grey;border-radius:100%;" />
+						<div class="overlay">
+							<div class="text">
+								<h5 style="padding-top:0px;padding-bottom:0px;text-align:center;">Microtome Slee <br /><a href="images/Microtome Slee/test.pdf" target="_blank" align="center" style="color:red;">pdf</a></h5>
+							</div>
+						</div>
+					</div>
+					<div class="item O" align="center">
+						<img src="images/Oven Controller/Oven Controller.jpg" class="image img-fluid d-block" alt="..." style="width:250px;text-align:center;border:2px solid grey;border-radius:100%;" />
+						<div class="overlay">
+							<div class="text">
+								<h5 style="padding-top:0px;padding-bottom:0px;text-align:center;">Oven Controller <br /><a href="images/Oven Controller/Oven Controller Manual and Specification.pdf" target="_blank" align="center" style="color:red;">pdf</a></h5>
+							</div>
+						</div>
+					</div>
+					<div class="item O" align="center">
+						<img src="images/Tissue Processor 4 Sensor/Tissue Processor 4 Sensor.jpg" class="image img-fluid d-block" alt="..." style="width:250px;text-align:center;border:2px solid grey;border-radius:100%;" />
+						<div class="overlay">
+							<div class="text">
+								<h5 style="padding-top:0px;padding-bottom:0px;text-align:center;">Tissue Processor 4 Sensor<br /><a href="images/Tissue Processor 4 Sensor/test.pdf" target="_blank" align="center" style="color:red;">pdf</a></h5>
+							</div>
+						</div>
+					</div>
+					<div class="item O" align="center">
+						<img src="images/Tissue Processor 12 Sensor/Tissue Processor 12 Sensor.jpg" class="image img-fluid d-block" alt="..." style="width:250px;text-align:center;border:2px solid grey;border-radius:100%;" />
+						<div class="overlay">
+							<div class="text">
+								<h5 style="padding-top:0px;padding-bottom:0px;text-align:center;">Tissue Processor 12 Sensor <br /><a href="images/Tissue Processor 12 Sensor/test.pdf" target="_blank" align="center" style="color:red;">pdf</a></h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid achv toppadding servc pt-4">
+			<div class="row" style="background-color:#80808014;">
+				<div class="col-md-12 text-center text-light consult">
+					<h4>OUR SERVICES</h4>
+				</div>
+			</div>
+			<div class="row text-center solution">
+				<div class="col-md-4 text-center s1">
+					<div class="s1text">
+					<span class="fa fa-handshake-o fa-3x"></span>
+					<p>CONSULTATION-PROJECT AND PLANNING</p></div>
+				</div>
+				<div class="col-md-4 text-center s2">
+					<div class="s1text">
+					<span class="fa fa-tasks fa-3x"></span>
+					<p>ENVIRONMENTAL TEST CHAMBERS AND LABORATORY EQUIPMENT’S</p></div>
+				</div>
+				<div class="col-md-4 text-center s3">
+					<div class="s1text">
+					<span class="fa fa-star-o fa-3x"></span>
+					<p>MECHANICAL TESTING EQUIPMENTS</p></div>
+				</div>
+			</div>
+			<div class="row pt-2 pb-5 text-center solution">
+				<div class="col-md-4 text-center s1">
+					<div class="s1text">
+					<span class="fa fa-cog fa-3x"></span>
+					<p>CUSTOMIZATION OF THE EQUIPMENTS</p></div>
+				</div>
+				<div class="col-md-4 text-center s2">
+					<div class="s1text">
+						<span class="fa fa-users fa-3x"></span>
+						<p>CALIBRATION & VALIDATION</p>
+					</div>
+				</div>
+				<div class="col-md-4 text-center s3">
+					<div class="s1text">
+					<span class="fa fa-wrench fa-3x"></span>
+					<p>REPAIR AND AMC</p></div>
+				</div>
+			</div>
+		</div>
+		<!--main-container/-->
+		<!--footer-->
+		<div class="container-fluid footer toppadding2">
+			<div class="row">
+				<div class="col-md-5">
+					<div class="row">
+						<div class="col-md-7 col-6 contctus">
+							<h6 class="pt-4">Our Office</h6>
+							<p class="pt-2">LUXLIGHTING TECHNOLOGY PRIVATE LIMITED
+							 GSTIN : 07AADCL2486K1Z7</br> B-232/1, Birla Farm Chhattarpur Extension, New Delhi-110074
+							 </p>
+						</div>
+						<div class="col-md-5 col-6 quicklink">
+							<h6 class="pt-4">Quick Links</h6>
+							<ul class="pt-0">
+								<li><a href="index.html" class="hvr-skew-forward">Home</a></li>
+								<li><a href="about.html" class="hvr-skew-forward">About Us</a></li>
+								<li><a href="service.html" class="hvr-skew-forward">Services</a></li>
+								<li><a href="product1.html" class="hvr-skew-forward">Product</a></li>
+								<li><a href="contact.html" class="hvr-skew-forward">Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-7 col-6 contctus">
+							<h6 class="">Reach Us At</h6>
+							<p class="pt-0 pb-0 mt-0 mb-0">Telephone:<span style="font-weight:400;">  +91 11 65666883</span></p>
+							<p class="pt-0 pb-0 mt-0 mb-0">Mob:<span style="font-weight:400;">  9350831213,</span></p>
+							<p class="pt-0 pb-0 mt-0 mb-0">Email:<span style="font-weight:400;"> info@rtcin.com </span></p>
+						</div>
+						<div class="col-md-5 col-6 quicklink">
+							<h6 class="">Follow Us</h6>
+							<div class="pt-0">
+								<span>
+									<a href="http://www.facebook.com" target="_blank" title="facebook" class="hvr-icon-buzz-out"><i class="fa fa-facebook-square hvr-icon"></i></a>
+									<a href="http://www.twitter.com" target="_blank" title="twitter" class="hvr-icon-buzz-out"><i class="fa fa-twitter hvr-icon"></i></a>
+									<a href="http://www.linkedin.com" target="_blank" title="linkedin" class="hvr-icon-buzz-out"><i class="fa fa-linkedin hvr-icon"></i></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-7">
+					<div class="row">
+						<div class="col-md-6 text-center">
+							<h6 class="pt-4">Find us on Google Map</h6>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d28057.459867556445!2d77.1646561791197!3d28.47405055309519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sB-232%2F1%2C+Birla+Farm+Chhattarpur+Extension%2C+New+Delhi-110074!5e0!3m2!1sen!2sin!4v1559108394449!5m2!1sen!2sin" width="100%" height="250" frameborder="0" style="border:0" class="pt-2" allowfullscreen></iframe>
+						</div>
+						<div class="col-md-6 text-center">
+							<h6 class="pt-4">Get in touch</h6>
+							<div style="padding-left:12px;padding-right:12px;">
+								<form class="form-horizontal pt-2" action="/action_page.php" style="margin-left:auto;margin-right:auto;">
+									<div class="row form-group">
+										<input type="email" class="form-control" id="email" placeholder="Your Name">
+									</div>
+									<div class="row form-group">
+										<input type="email" class="form-control" id="email" placeholder="Your Email">
+									</div>
+									<div class="row form-group">
+										<input type="email" class="form-control" id="email" placeholder="Phone Number">
+									</div>
+									<div class="row form-group">
+										<textarea class="form-control" id="email" placeholder="Your Message Here" rows="2"></textarea>
+									</div>
+									<div class="row form-group" id="cntbtn"align="center">
+										<div class="col-sm-12 col-xs-12">
+										<button type="email" class="btn btn-default hvr-ripple-out" style="color:grey;border:0;margin-left:-8px;">Submit</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--footer/-->
+		<!--footer-bottom-->
+		<div class="container-fluid footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<p class="text-center">copyright © 2018-2019 Luxlighting Technology Private Limited</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--footer-bottom-->
+		<a href="#myPage" id="toTop" title="to top" style="display:inline;"></a>
+		<!--<script src="js/aos.js"></script>-->
+		<script src="js/wow.js"></script>
+		<script>
+			new WOW().init();
+		</script>
+		<script>
+			$('.owl-carousel').owlCarousel({
+				loop:true,
+				margin:10,
+				autoplay:true,
+				autoplayTimeout:2000,
+				responsiveClass:true,
+				responsive:{
+					0:{
+						items:1,
+						nav:true
+					},
+					600:{
+						items:3,
+						nav:false
+					},
+					1000:{
+						items:4,
+						nav:true,
+						loop:false
+					}
+				}
+			})
+		</script>
+	</body>
+</html>
